@@ -1,0 +1,5 @@
+{
+    "/Statuses/Success": "Success!\nS_OK\nEverything's good!",
+    "/Statuses/Failure": "Failure!\nS_SHUT\nThe device is offline!",
+    "/Elements/SampleText": "Hello from __PluginName__ plugin!"
+}

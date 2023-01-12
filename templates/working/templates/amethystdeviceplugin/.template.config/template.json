@@ -1,0 +1,85 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "K2VR Team",
+    "classifications": [
+        "Amethyst",
+        "ClassLib"
+    ],
+    "identity": "PluginTemplate.DeviceProject",
+    "name": "Amethyst tracking provider plugin (ITrackingDevice)",
+    "shortName": "amethystdeviceplugin",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName": "Amethyst.Plugins.Samples.Device",
+    "symbols": {
+        "PluginGuid": {
+            "type": "generated",
+            "generator": "guid",
+            "replaces": "__PluginGuid__",
+            "parameters": {
+                "defaultFormat": "D"
+            }
+        },
+        "PluginName": {
+            "type": "parameter",
+            "datatype": "string",
+            "description": "Device plugin name",
+            "defaultValue": "Sample",
+            "replaces": "__PluginName__"
+        },
+        "PluginNameSafe": {
+            "type": "generated",
+            "generator": "regex",
+            "dataType": "string",
+            "replaces": "__PluginNameSafe__",
+            "fileRename": "DevicePlugin",
+            "parameters": {
+                "source": "PluginName",
+                "steps": [
+                    {
+                        "regex": "[^a-zA-Z\\d:]",
+                        "replacement": ""
+                    }
+                ]
+            }
+        },
+        "EnableSettings": {
+            "type": "parameter",
+            "dataType": "bool",
+            "description": "Enable custom plugin settings for this device plugin",
+            "defaultValue": "true"
+        },
+        "BlockFiltering": {
+            "type": "parameter",
+            "dataType": "bool",
+            "description": "Block Amethyst position filtering for trackers using this plugin",
+            "defaultValue": "false"
+        },
+        "OverridePhysics": {
+            "type": "parameter",
+            "dataType": "bool",
+            "description": "Override physics data with your own values",
+            "defaultValue": "false"
+        },
+        "SelfUpdate": {
+            "type": "parameter",
+            "dataType": "bool",
+            "description": "Reques Amethyst not to call Update() on your plugin",
+            "defaultValue": "false"
+        },
+        "SupportFlip": {
+            "type": "parameter",
+            "dataType": "bool",
+            "description": "Enable skeleton flip support for applicable joints (for Kinect-like devices)",
+            "defaultValue": "false"
+        },
+        "SupportAppOri": {
+            "type": "parameter",
+            "dataType": "bool",
+            "description": "Support custom-calculated orientation for applicable joints (for Kinect-like devices)",
+            "defaultValue": "false"
+        }
+    }
+}
