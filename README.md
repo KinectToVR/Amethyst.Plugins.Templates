@@ -1,7 +1,7 @@
 # Amethyst.Plugins.Templates
 
 Plugin templates for [Amethyst.NET](https://github.com/KinectToVR/Amethyst) implementing the [Amethyst Plugin Contract](https://github.com/KinectToVR/Amethyst/tree/main/Amethyst.Plugins.Contract).  
-Install [dotnet 7](https://dotnet.microsoft.com/) and run `dotnet new install Amethyst.Plugins.Templates::1.2.0`
+Install [dotnet 7](https://dotnet.microsoft.com/) and run `dotnet new install Amethyst.Plugins.Templates::1.2.1`
 
 ## Usage
 
