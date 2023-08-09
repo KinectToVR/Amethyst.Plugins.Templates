@@ -43,3 +43,5 @@ x86/
 Amethyst/Amethyst.aps
 
 external/protobuf/out/
+
+templates/working/working.sln

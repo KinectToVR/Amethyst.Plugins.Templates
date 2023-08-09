@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.2.1</PackageVersion>
-    <Version>1.2.1</Version>
+    <PackageVersion>1.2.5.0</PackageVersion>
+    <Version>1.2.5.0</Version>
     <PackageId>Amethyst.Plugins.Templates</PackageId>
     <Title>Amethyst Plugin Templates</Title>
     <Description>Templates to use when creating a plugin for Amethyst.</Description>
